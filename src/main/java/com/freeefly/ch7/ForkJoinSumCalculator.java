@@ -26,14 +26,17 @@ public class ForkJoinSumCalculator extends RecursiveTask<Long> {
         if (length <= THRESHOLD) {
             return computeSequentially();
         }
-        // 분할 왼쪽에 해당하는 태스크를 만들어
+        // 분할 왼쪽에 해당하는 태스크를 만들고
         ForkJoinSumCalculator leftTask = new ForkJoinSumCalculator(numbers, start, start + length / 2);
-        // 다른 쓰레드에 할당
+        // 다른 쓰레드에 할당 후 compute
         leftTask.fork();
-        // 분할 오른쪽에 해당하는 태스크를 만들어
+        // 분할 오른쪽에 해당하는 태스크를 만들고
         ForkJoinSumCalculator rightTask = new ForkJoinSumCalculator(numbers, start + length / 2, end);
+        // 즉시 실행
         Long rightResult = rightTask.compute();
+        // 이후 left 와 join
         Long leftResult = leftTask.join();
+        // 결과 리턴
         return leftResult + rightResult;
     }
 

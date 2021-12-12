@@ -19,15 +19,4 @@ public class ParameterizedBehaviorTest {
         return false;
 
     }
-
-    private static Boolean filterP(String p) {
-        List<Integer> list = new ArrayList<>();
-        Comparator.comparing((String t1) -> t1, Comparator.reverseOrder());
-        Runnable runnable = () -> {
-            try {
-
-            } catch (Exception e) {
-            }
-        };
-    }
 }
