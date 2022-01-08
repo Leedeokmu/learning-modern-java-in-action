@@ -1,6 +1,6 @@
 package com.freeefly.chap07;
 
-import static modernjavainaction.chap07.ParallelStreamsHarness.FORK_JOIN_POOL;
+import static com.freeefly.chap07.ParallelStreamsHarness.FORK_JOIN_POOL;
 
 import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveTask;

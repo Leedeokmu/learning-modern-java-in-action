@@ -10,8 +10,8 @@ import static java.util.stream.Collectors.reducing;
 import static java.util.stream.Collectors.summingInt;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toSet;
-import static modernjavainaction.chap06.Dish.dishTags;
-import static modernjavainaction.chap06.Dish.menu;
+import static com.freeefly.chap06.Dish.dishTags;
+import static com.freeefly.chap06.Dish.menu;
 
 import java.util.List;
 import java.util.Map;

@@ -5,7 +5,7 @@ import static java.util.stream.Collectors.collectingAndThen;
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.maxBy;
 import static java.util.stream.Collectors.partitioningBy;
-import static modernjavainaction.chap06.Dish.menu;
+import static com.freeefly.chap06.Dish.menu;
 
 import java.util.List;
 import java.util.Map;

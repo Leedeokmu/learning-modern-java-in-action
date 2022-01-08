@@ -1,12 +1,12 @@
 package com.freeefly.chap05;
 
-import static java.util.stream.Collectors.toList;
-import static modernjavainaction.chap04.Dish.menu;
+import com.freeefly.chap06.Dish;
 
 import java.util.Arrays;
 import java.util.List;
 
-import modernjavainaction.chap04.Dish;
+import static com.freeefly.chap06.Dish.menu;
+import static java.util.stream.Collectors.toList;
 
 public class Mapping{
 

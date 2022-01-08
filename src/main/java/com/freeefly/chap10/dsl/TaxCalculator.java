@@ -16,14 +16,14 @@
 
 package com.freeefly.chap10.dsl;
 
-import static modernjavainaction.chap10.dsl.MixedBuilder.buy;
-import static modernjavainaction.chap10.dsl.MixedBuilder.forCustomer;
-import static modernjavainaction.chap10.dsl.MixedBuilder.sell;
+import static com.freeefly.chap10.dsl.MixedBuilder.buy;
+import static com.freeefly.chap10.dsl.MixedBuilder.forCustomer;
+import static com.freeefly.chap10.dsl.MixedBuilder.sell;
 
 import java.util.function.DoubleUnaryOperator;
 
-import modernjavainaction.chap10.dsl.model.Order;
-import modernjavainaction.chap10.dsl.model.Tax;
+import com.freeefly.chap10.dsl.model.Order;
+import com.freeefly.chap10.dsl.model.Tax;
 
 public class TaxCalculator {
 

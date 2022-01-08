@@ -6,7 +6,7 @@ import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.reducing;
 import static java.util.stream.Collectors.summarizingInt;
 import static java.util.stream.Collectors.summingInt;
-import static modernjavainaction.chap06.Dish.menu;
+import static com.freeefly.chap06.Dish.menu;
 
 import java.util.Comparator;
 import java.util.IntSummaryStatistics;

@@ -1,10 +1,12 @@
 package com.freeefly.chap05;
 
-import static modernjavainaction.chap04.Dish.menu;
+
+import com.freeefly.chap06.Dish;
 
 import java.util.Optional;
 
-import modernjavainaction.chap04.Dish;
+import static com.freeefly.chap06.Dish.menu;
+
 
 public class Finding {
 

@@ -1,7 +1,7 @@
 package com.freeefly.chap15;
 
-import static modernjavainaction.chap15.Functions.fo;
-import static modernjavainaction.chap15.Functions.go;
+import static com.freeefly.chap15.Functions.fo;
+import static com.freeefly.chap15.Functions.go;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;

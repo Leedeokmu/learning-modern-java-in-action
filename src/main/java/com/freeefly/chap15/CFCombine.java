@@ -1,7 +1,7 @@
 package com.freeefly.chap15;
 
-import static modernjavainaction.chap15.Functions.f;
-import static modernjavainaction.chap15.Functions.g;
+import static com.freeefly.chap15.Functions.f;
+import static com.freeefly.chap15.Functions.g;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;

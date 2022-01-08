@@ -15,8 +15,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import modernjavainaction.chap16.ExchangeService;
-import modernjavainaction.chap16.ExchangeService.Money;
+import com.freeefly.chap16.ExchangeService;
+import com.freeefly.chap16.ExchangeService.Money;
 
 public class BestPriceFinder {
 

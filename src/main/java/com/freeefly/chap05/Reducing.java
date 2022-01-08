@@ -1,12 +1,12 @@
 package com.freeefly.chap05;
 
-import static modernjavainaction.chap04.Dish.menu;
+import static com.freeefly.chap04.Dish.menu;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-import modernjavainaction.chap04.Dish;
+import com.freeefly.chap04.Dish;
 
 public class Reducing {
 

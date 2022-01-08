@@ -16,9 +16,9 @@
 
 package com.freeefly.chap10.dsl;
 
-import modernjavainaction.chap10.dsl.model.Order;
-import modernjavainaction.chap10.dsl.model.Stock;
-import modernjavainaction.chap10.dsl.model.Trade;
+import com.freeefly.chap10.dsl.model.Order;
+import com.freeefly.chap10.dsl.model.Stock;
+import com.freeefly.chap10.dsl.model.Trade;
 
 public class MethodChainingOrderBuilder {
 

@@ -1,6 +1,7 @@
 package com.freeefly.chap16;
 
-import static modernjavainaction.chap16.Util.delay;
+
+import static com.freeefly.chap16.Util.delay;
 
 public class ExchangeService {
 

@@ -16,20 +16,20 @@
 
 package com.freeefly.chap10.dsl;
 
-import static modernjavainaction.chap10.dsl.MethodChainingOrderBuilder.forCustomer;
-import static modernjavainaction.chap10.dsl.MixedBuilder.buy;
-import static modernjavainaction.chap10.dsl.MixedBuilder.forCustomer;
-import static modernjavainaction.chap10.dsl.MixedBuilder.sell;
-import static modernjavainaction.chap10.dsl.NestedFunctionOrderBuilder.at;
-import static modernjavainaction.chap10.dsl.NestedFunctionOrderBuilder.buy;
-import static modernjavainaction.chap10.dsl.NestedFunctionOrderBuilder.on;
-import static modernjavainaction.chap10.dsl.NestedFunctionOrderBuilder.order;
-import static modernjavainaction.chap10.dsl.NestedFunctionOrderBuilder.sell;
-import static modernjavainaction.chap10.dsl.NestedFunctionOrderBuilder.stock;
+import static com.freeefly.chap10.dsl.MethodChainingOrderBuilder.forCustomer;
+import static com.freeefly.chap10.dsl.MixedBuilder.buy;
+import static com.freeefly.chap10.dsl.MixedBuilder.forCustomer;
+import static com.freeefly.chap10.dsl.MixedBuilder.sell;
+import static com.freeefly.chap10.dsl.NestedFunctionOrderBuilder.at;
+import static com.freeefly.chap10.dsl.NestedFunctionOrderBuilder.buy;
+import static com.freeefly.chap10.dsl.NestedFunctionOrderBuilder.on;
+import static com.freeefly.chap10.dsl.NestedFunctionOrderBuilder.order;
+import static com.freeefly.chap10.dsl.NestedFunctionOrderBuilder.sell;
+import static com.freeefly.chap10.dsl.NestedFunctionOrderBuilder.stock;
 
-import modernjavainaction.chap10.dsl.model.Order;
-import modernjavainaction.chap10.dsl.model.Stock;
-import modernjavainaction.chap10.dsl.model.Trade;
+import com.freeefly.chap10.dsl.model.Order;
+import com.freeefly.chap10.dsl.model.Stock;
+import com.freeefly.chap10.dsl.model.Trade;
 
 public class Main {
 

@@ -20,5 +20,4 @@ public class BestPriceFinderMain {
     long duration = (System.nanoTime() - start) / 1_000_000;
     System.out.println(msg + " done in " + duration + " msecs");
   }
-
 }

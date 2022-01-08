@@ -1,11 +1,12 @@
 package com.freeefly.chap16;
 
-import static modernjavainaction.chap16.Util.delay;
-import static modernjavainaction.chap16.Util.format;
 
 import java.util.Random;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Future;
+
+import static com.freeefly.chap16.Util.delay;
+import static com.freeefly.chap16.Util.format;
 
 public class AsyncShop {
 

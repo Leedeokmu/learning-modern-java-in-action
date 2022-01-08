@@ -1,9 +1,9 @@
 package com.freeefly.chap04;
 
-import static java.util.stream.Collectors.toList;
-import static modernjavainaction.chap04.Dish.menu;
-
 import java.util.List;
+
+import static com.freeefly.chap06.Dish.menu;
+import static java.util.stream.Collectors.toList;
 
 public class HighCaloriesNames {
 

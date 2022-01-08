@@ -1,11 +1,10 @@
 package com.freeefly.chap16;
 
+import org.junit.rules.Stopwatch;
+
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -50,10 +49,18 @@ public class BestPriceFinder {
   }
 
   public Stream<CompletableFuture<String>> findPricesStream(String product) {
+//    return shops.stream()
+//        .map(shop -> CompletableFuture.supplyAsync(() -> shop.getPrice(product), executor))
+//        .map(future -> future.thenApply(Quote::parse))
+//        .map(future -> future.thenCompose(quote -> CompletableFuture.supplyAsync(() -> Discount.applyDiscount(quote), executor)));
     return shops.stream()
-        .map(shop -> CompletableFuture.supplyAsync(() -> shop.getPrice(product), executor))
-        .map(future -> future.thenApply(Quote::parse))
-        .map(future -> future.thenCompose(quote -> CompletableFuture.supplyAsync(() -> Discount.applyDiscount(quote), executor)));
+            .map(shop -> CompletableFuture.supplyAsync(() -> shop.getPrice(product), executor)
+                    .thenApply(Quote::parse)
+                    .thenApplyAsync(quote -> Discount.applyDiscount(quote))
+                    //                    .thenCompose(quote -> CompletableFuture.supplyAsync(() -> Discount.applyDiscount(quote)))
+                    .orTimeout(10, TimeUnit.SECONDS)
+                    .orTimeout(10, TimeUnit.SECONDS)
+            );
   }
 
   public void printPricesStream(String product) {
